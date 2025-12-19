@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Rovio Entertainment Oy - Job Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header,
+        footer {
+            background-color: red; 
+            padding: 30px;
+        }
+
+        nav a {
+            margin: 0 10px 
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        .form-section {
+            background-color: #ebebeb;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+         <h1 > Rovio Entertainment Oy</h1>
+         <nav>
+             <a href="#application">Application Form</a>
+             <a href="#quote">Quote</a>
+             <a href="#media">Media</a>
+        </nav>
+</header>
+
+<main>
+    <section id="application" class="form-section from">
+        <article>
+        <h2 class="inner heading"> Assitant Job Application</h2>
+        
+        <!--Job Application form starts here-->
+        <form action="/submit" method="POST" autocomplete="on">
+    
+            <label>Full Name:
+                <input type="text" name="full name" placeholder="Mr John" required minlength="3" 
+                    maxlength=" 50">
+                </label>
+                <br><br>
+                <label>Email:
+                    <input type="text" name="email" placeholder="you@mail.com" required 
+                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </label><br><br>
+            </label>Password:
+                 <input type="password" name="password" required>
+            </label><br><br>
+             <label>Years of Experience:
+                 <input type="nu" name="experience" min="0" max="10">
+            </label><br><br>
+            <label>Expected Salary Range:
+                <input type="range" name="salary" min="1000" max="10000" step="1000">
+                10000 euro/month
+            </label><br><br>
+            <label>Job Preferences:<label><br>
+            <input type="checkbox" name="preferences" value="fulltime"> Full-Time<br>
+            <input type="checkbox" name="preferences" value="parttime"> Part-Time<br><br>
+                
+            <label>Job Type:</label><br>
+            <input type="radio" name="jobtype" value="intern"> Internship<br>
+            <input type="radio" name="jobtype" value="on site"> On site<br>
+            <input type="radio" name="jobtype" value="Part-time"> Part-time<br><br>
+            
+            <label>Department:
+                <select name="department">
+                    <option value="seniorgamedeveloper">Senior Game Developer</option>
+                    <option value="productmarketingspecialist">Product Marketing Specialist</option>
+                    <option value="marketingartist">Marketing Artist</option>
+                    <option value="legalcounsel">Legal Counsel</option>
+                    <option value="leadproductmanagerangrybirds2">Lead Product Manager,Angry Birds 2</option>
+                    <option value="senioruxdesigner">Senior UX Designer</option>
+                    <option value="productmarketingmangaerred'sclub">Product Marketing Manager,Red's Club</option>
+                    <option value="leadgamedeveloper">Lead Game Developer</option>
+                    <option value="principalgamedeveloperangrybirdsdreamblast">Principal Game Developer,Angry Birds Dream Blast</option>
+                    <option value="seniortechnicalmangaer">Senior Technical Manager</option>
+                    <option value="playerexperiencedirector">Player Experience Director</option> 
+                    <option value="leadmarketingcreativespecialist">Lead Marketing Creative Specialist</option>
+                    <option value="seniorgamedeveloper">Senior Game Developer</option>
+                    <option value="gamelead">Game Lead</option>
+                </select>
+            </label><br><br>
+
+            <label>Rovio Premises:
+                <input list="offices" name="offices">
+                <datalist id="offices">
+                    <option value="Helsinki">
+                    <option value="Copenhagen">
+                    <option value="Stockholm">
+                    <option value="Toronto">
+                    <option value="Montreal">
+                    <option value="Barcelona">
+                    <option value="Izmir">
+                <datalist>
+                </label><br><br>
+
+                <label></label>Motivation Letter:<br>
+                    <textarea name="coverletter" rows="10" cols=""
+                         placeholder="Why is this is right place to work?"></textarea>
+                    </label><br><br>
+
+                    <label>Job postion ID (disabled):
+                        <input type="text" value="Rovio000" disabled>
+                    </label><br><br>
+                    
+                    <label>Application ID (readonly):
+                        <input type="text" value="ROV2025" readonly>
+                    </label><br><br>
+
+                    <input type="submit" class="click button" value="Send Application"
+                        aria-label="Submit Job Application">
+
+                </form>
+                <!--Job Allpication form ends here -->
+            </article>
+        </section>
+        <br>
+    
+        <aside>
+            <blockqoute id="quote"> 
+                "The Rovio way is shaped by tangible principles that act as beacons and guide our everyday work"
+            </blockqoute>
+        </aside>
+
+        <section id="media">
+            <article>
+                <h2>Checklist</h2>
+                <div class="media-info">
+                    <ul type="square">
+                        <li>Bring updated CV</li>
+                        <li>Prepare references</li>
+                        <li>Check Rovio career portal</li>
+                    <ul>
+                </div>
+                <p>For more information, visit <a href="#">ROVIO</a> careers </p>
+                <!--Figure with Image and Caption-->
+                <figure>
+                    <img src="Rovio-Logo.png" alt="ROVIO logo" width="150">
+                    <figcaption>Official ROVIO Logo</figcaption>
+                </figure><br><br>
+
+                <!--Embed External Media -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7936.991965514148!2d24.824026277175335!3d60.17662740056883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bcc5a87c8f5%3A0xeb5008bcbe86d034!2sRovio%20Entertainment%20Oy!5e0!3m2!1sen!2sfi!4v1765265483491!5m2!1sen!2sfi" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>    
+            </article>
+        </section>
+    </main>
+    <br>
+    
+    <footer>
+        <p>
+            &copy;2025 Rovio International.All rights reserved.</p>
+        </p>
+        </footer>
+    </body>
+
+    </html>

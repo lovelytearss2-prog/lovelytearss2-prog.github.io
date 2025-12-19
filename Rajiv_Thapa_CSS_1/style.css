@@ -1,0 +1,193 @@
+/* CSS for all Elements */
+*{
+    margin: 0;
+    padding: 0:
+    box-sizing: border-box;
+}
+
+/* Type selectors and Multiple selectors */
+h1 {
+    margin-top: 20px:
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+
+}
+
+/* Aside */
+aside {
+    text-align: center;
+    margin: 20px auto;
+    color: crimson; 
+
+}
+
+/* Heading */
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form */
+form {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+
+}
+
+/* Pragrapgh */
+p {
+    font-size: 14px;
+    color: #666;
+
+}
+
+/* Navigation Bar */
+nav {
+    text-align: center;   
+    margin: 15px 0;
+
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+/* Class Selectors */
+.form-section {
+    background-color: #ffffff; !important;
+    margin: 20px auto;
+    padding: 35px; !important;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.media-info {   
+    padding: 30px 400px 30px 30px;
+    background-color: rgb(232, 241, 255);
+    color: #727272;
+    font-size: 16px;
+    border: 1px solid #CDCDCD;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* ID Selector */
+#main-title {
+    color: #1b2321;
+    font-weight: bold;
+}
+
+#media {
+    text-align: center;
+}
+
+/* Multiple class selectors */
+.green.bold {
+    color: green;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+input[type="text"],
+input[type="password"],
+img[src='ROVIO-logo],
+input,
+select {
+    border: 1px solid #CDCDCD
+    margin: 1px 5px;
+    padding: 10px;
+}
+
+input[type="range"] {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/*Descendant combinators*/
+.form-section label {
+    display: block;
+    font-weight: bold;
+    
+}
+
+section .main-list {
+    list-style-type: square;
+    background-colour: aliceblue;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.main-list li {
+    margin-left: 20px;
+    color: darkslategray;
+    padding: 3px 0;
+}
+
+#media h2 {
+    font-size: 32px;
+    color: darkgreen;
+}
+
+#media p {
+    font-size: 16px;
+    margin: 15px;
+}
+
+h1,
+h2,
+.menu {
+    color: #1b2321;
+    text-family: Verdana, sans-serif;
+}
+
+h1.title {
+    text-transfrom: uppercase;
+    letter-spacing: 2px;  
+}    
+
+.ROVIO:hover {
+    opacity: 0.7;
+    transform: scale(1.4);
+    transition: all 0.3s ease;
+}
+
+textarea {
+    width: 100%;
+}
+
+ 
+/* Chaining Start */
+h2.inner-heading {
+    font-size: 28px;
+}
+
+input.click-button {
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+    border: 1px solid blue;
+
+}
+
+/*Psedo-classes*/
+input.click-button:hover {
+    background-color: white;
+    color: blue;
+}
+
+/* Chaining End */
