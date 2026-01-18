@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width,intial-scale=1.0">
+    <title>Art Gallery - Gallery </title>
+    <link rel= "stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="main-tile" class="title">Art Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cities & its beauty</h2>
+        <div class="gallery">
+
+            <figure class="artwork relative">
+                <img src="helsinki.jpg" alt="Helsinki" class="art-img">
+                <figcaption>Helsinki (Relative positioning)</figcaption>
+            </figure>
+
+            <figure class="artwork absolute">
+                <img src="sunset.jpg" alt="sunset" class="art-img">
+                <figcaption>Sunset (absolute positioning)</figcaption>
+            </figure>
+
+            <figure class="artwork sticky">
+                <img src="suomenlinna.jpg" alt="suomenlinna" class="art-img">
+                <figcaption>Suomenlinna (sticky positioning)</figcaption>
+            </figure>
+
+            <figure class="artwork static">
+                <img src="tokyo.jpg" alt="tokyo" class="art-img">
+                <figcaption>Tokyo (static positioning)</figcaption>
+            </figure>
+            <!--iframe -->
+            <figure class="artwork iframe-box">
+
+                <iframe title="Switzerland" class="art-frame" width="400" height="300" src="switzerland.jpg">
+                </iframe>
+
+                <!-- <iframe src="switzerland.jpg title=Switzerland class="art-iframe></iframe>-->
+                <figcaption>Switzerland (iframe-box)</figcaption>
+            </figure>
+            <!--iframe-->
+        
+        </div>
+        <div class="gallery-stack">
+            <div class="z-stack-inline">
+                <figure class="z-box z-n1">
+                    <img src="paris.jpg" alt="Paris" class="art-img">
+                    <figcaption>Paris (z-n1)</figcaption>
+                </figure>
+                <figure class="z-box z-0">
+                    <img src="fuji.jpg" alt="Fuji" class="art-img">
+                    <figcaption>Fuji (z-0)</figcaption>
+                </figure>
+                <figure class="z-box z-1">
+                    <img src="kyoto.jpg" alt="Kyoto" class="art-img">
+                    <figcaption>Kyoto (z-1) </figcaption>
+                </figure>
+                <figure class="z-box z-2">
+                    <img src="prague.jpg" alt="Prague" class="art-img">
+                    <figcaption>Prague (z-2) </figcaption>
+                </figure>
+                <figure class="z-box z-3">
+                    <img src="denmark.jpg" alt="Denmark" class="art-img">
+                    <figcaption>Denmark (z-3)</figcaption>
+                </figure>
+                </div>
+
+                <figure class="artwork hidden-player">
+                    <img src="copenhagen.jpg" alt="Copenhagen" class="art-img">
+                    <figcaption>Copenhagen</figcaption>
+                </figure>
+
+            </div>
+            <div class="gallery-out">
+                <div class="floating-box">
+                    <p>Which one do you prefer visit? <br> <strong>All cities are beautiful</strong></p>
+                </div>
+                <div class="clear-box">
+                    <p>Favourites: Helsinki, Switzerland, Prague, Tokyo, Denmark, Paris</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="fixed-footer">
+        <p>Art Gallery - Exploring different Cities</p>
+    </footer>
+
+</body>
+
+</html>
+
+            
+
