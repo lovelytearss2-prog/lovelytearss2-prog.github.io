@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nokia Corporation-Job Application</title>
+    <style>
+        body {font-family: Arial, sans-serif; margin: 20px; }
+        header, footer { background-color: #f0f0f0; padding: 10px; }
+        nav a { margin: 0 10px; }
+        section { margin-top: 20px; }
+        .form-section { background-color: #f9f9f9; padding: 15px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nokia Corporation</h1>
+    <nav>
+        <a href="#application">Application Form</a>
+        <a href="#quote">Quote</a>
+        <a href="#media">Nokia Media</a>
+    </nav>
+</header>
+
+<main>
+    <section id="application" class="form-section">
+        <article>
+            <h2>Assistant Programmer Job Application</h2>
+
+            <!-- Job Application Form Starts Here -->
+            <form action="/submit" method="POST" autocomplete="on">
+                <label>Full name:
+                    <input type="text" name="full_name" placeholder="Mr/Mrs.Smart" required minlength="3" maxlength="20">
+                </label><br><br>
+
+                <label>Email:
+                    <input type="text" name="email" placeholder="you@nokia.fi" required pattern="email">
+                </label><br><br>
+
+                <label>Password
+                    <input type="password" name="password" required>
+                </label><br><br>
+
+                <label>Years of Experience:
+                    <input type="number" name="experience " min="0" max="10">
+                </label><br><br>
+
+                <label>Expected Salary Range:
+                    <input type="range" name="salary" min="1000" max="10000" step="200">
+                </label><br><br>
+
+                <label>Job Preferences:</label><br><br>
+                <input type="checkbox" name="preference" value="remote"> Remote Work<br>
+                <input type="checkbox" name="preference" value="onoffice"> On office<br>
+                <input type="checkbox" name="preference" value="par-time"> Part-time<br><br>
+
+                <label>Job Type:</label><br>
+                <input type="radio" name="jobtype" value="assistant programmer">Assistant Programmer<br>
+                <input type="radio" name="jobtype" value="junior assistant programmer">Junior Assistant Programmer<br>               
+                <input type="radio" name="jobtype" value="intern">Internship<br><br>
+
+                <label>Department:
+                    <select name="department">
+                        <option value="seniorprogrammer">Senior Programmer</option>
+                        <option value="juniorprogrammer">Junior Programmer</option>
+                        <option value="internship">Internship</option>
+                        <option value="c++">C++</option>
+                        <option value="java">Java</option>
+                        <option value="cembedded">C Embedded</option>
+                        <option value="testing">Testing</option>
+                        <option value="specification">Specification</option>
+                        <option value="business">Business Management</option>
+                        <option value="devops">DevOps</option>
+                        <option value="data">Data Sciences</option> 
+                        <option value="cybersecurity">Cyber Security</option>                                         
+                    </select>
+                </label><br><br>
+                <label>Company Preferences:
+                    <input list="companies" name="companies">
+                    <datalist id="companies">
+                        <option value="Australia & New Zealand">
+                        <option value="Belgium">
+                        <option value="Canada">
+                        <option value="Finland">
+                        <option value="France">
+                        <option value="Greece">
+                        <option value="Hungary">
+                        <option value="India">
+                        <option value="Poland">
+                        <option value="Portugal">
+                        <option value="Romania">
+                        <option value="Slovakia">
+                        <option value="United States">
+                    </datalist>
+                </label><br><br>                
+
+                <label>Motivation Letter:<br>
+                    <textarea name="coverletter" rows="5" cols="40" placeholder="Work with us — it will make us better, and our company will help make you better than the best."></textarea>
+                </label><br><br>
+
+                <label>Referral Code (disabled):
+                    <input type="text" value="NOKIA100" disabled>
+                </label><br><br>
+
+                <label>Application ID (readonly):
+                    <input type="application_id" value="NOKIA" (readonly):></label>
+                </label><br><br>
+                <input type="submit" value="Send Application" aria-label="submit Job Application">
+            
+            </form>
+            <!--Job Application form Ends here -->  
+        </article>
+    </section>
+    <aside>
+        <blockquote id="quote">
+            "Expand your bubble and search for opportunities." Nokia
+        </blockquote>
+    </aside>
+
+    <section id="media">
+        <article>
+            <h2>Nokia Media</h2>
+
+            <!-- Figure with image and Caption -->
+        <figure>
+            <img src="images.jpeg" alt="Nokia Old logo" width="305" height="282">
+            <figcaption>Historic Nokia logo</figcaption>
+            </figure>
+        
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Nokia Corporation. All rights reserved.</p>
+</footer>
+
+<!-- This is a comment showing required use of HTML comments -->
